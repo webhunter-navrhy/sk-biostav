@@ -1,0 +1,51 @@
+{
+  "slug": "sk-biostav",
+  "nazev": "Biostav",
+  "url": "https://webhunter-navrhy.github.io/sk-biostav/",
+  "base": "/sk-biostav/",
+  "lang": "sk",
+  "popis": "Biostav, Michalová: kovovýroba od roku 1995. Sústružnícke výrobky a podložky podľa DIN 1010 aj atypické rozmery v krátkych dodacích lehotách.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "sustruh.jpg",
+  "logo": "",
+  "theme_color": "#16202e",
+  "typ": "LocalBusiness",
+  "ico": "",
+  "kontakt": {
+    "email": "gaal@biostav.sk",
+    "telefon": "+421 905 642 545",
+    "adresa": {
+      "ulice": "Hrable 68",
+      "psc": "976 57",
+      "mesto": "Michalová",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu biostav.sk"
+  },
+  "nav": [
+    {
+      "text": "Výroba",
+      "href": "#vyroba"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Dopyt",
+      "href": "#dopyt"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

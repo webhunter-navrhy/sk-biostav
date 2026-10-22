@@ -1,0 +1,66 @@
+{% extends "_base.html" %}
+{% set titulek = 'Biostav Michalová – kovovýroba a sústružnícke výrobky' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  {{ img('sustruh.jpg', 'Obrábanie kovu na sústruhu', sizes='100vw', cls='hero-foto') }}
+  <div class="wrap hero-text">
+    <p class="nadpis-maly">Kovovýroba od roku 1995</p>
+    <h1>Sústružnícke výrobky podľa Vašich rozmerov</h1>
+    <p class="lead">Z vlastnej výroby dodáme požadovaný artikel v krátkej dodacej lehote, aj s atypickými rozmermi.</p>
+    <p><a class="tlacitko" href="#dopyt">Poslať dopyt</a> <a class="tlacitko druhe" href="#vyroba">Čo vyrábame</a></p>
+  </div>
+</section>
+<section class="sekce" id="vyroba">
+  <div class="wrap dva">
+    <div>
+      <h2>Čo vyrábame</h2>
+      <h3>Sústružnícke výrobky</h3>
+      <p>Podložky podľa DIN 1010 alebo SN 213912 sústružené z automatovej alebo nerezovej ocele.</p>
+      <p>Potrebujete podložky s atypickými rozmermi? Dodáme Vám ich z vlastnej produkcie v krátkej dodacej lehote.</p>
+      <p>Vďaka vlastnej výrobe sme schopní dodávať cenovo výhodné sústružnícke výrobky aj v krátkych termínoch.</p>
+      <ul role="list" class="znacky">
+        <li>Automatová oceľ</li>
+        <li>Nerezová oceľ</li>
+        <li>DIN 1010</li>
+        <li>SN 213912</li>
+        <li>Atypické rozmery</li>
+      </ul>
+    </div>
+    {{ img('diely.jpg', 'Sústružené podložky a diely z kovu', sizes='(min-width: 60rem) 36rem, 100vw', cls='karta-foto') }}
+  </div>
+</section>
+<section class="sekce tmava" id="o-nas">
+  <div class="wrap dva obrat">
+    {{ img('cnc-panel.jpg', 'Ovládací panel CNC stroja', sizes='(min-width: 60rem) 36rem, 100vw', cls='karta-foto') }}
+    <div>
+      <h2>O nás</h2>
+      <p>Kovovýrobou sa zaoberáme od roku 1995. Vďaka kvalite a cene sme získali odbyt pre naše výrobky u renomovaných firiem doma, ale najmä v zahraničí.</p>
+      <p>Teraz chceme ďalej rásť a radi Vás privítame medzi našimi zákazníkmi. Tešíme sa na obojstranne výhodnú spoluprácu.</p>
+      <p class="podpis">Vladimír Gaál</p>
+    </div>
+  </div>
+</section>
+<section class="sekce" id="dopyt">
+  <div class="wrap dva">
+    <div>
+      <h2>Dopyt na výrobu</h2>
+      <p>Napíšte nám, čo potrebujete vyrobiť: materiál, rozmery a množstvo. Ak máte výkres, pripojte ho k dopytu.</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+<section class="sekce tmava" id="kontakt">
+  <div class="wrap dva">
+    <div>
+      <h2>Kontakt</h2>
+      <p><strong>BIOSTAV – Vladimír Gaál</strong><br>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}, Slovenská republika</p>
+    </div>
+    <div>
+      <p><a class="tap" href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+      <p><a class="tap" href="tel:+421905642545">+421 905 642 545</a></p>
+      <p><a class="tap" href="tel:+421486199385">+421 48 6199385</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}
